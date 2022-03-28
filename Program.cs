@@ -58,6 +58,7 @@ namespace Strings
                         ersatz = Console.ReadLine();
                         Console.WriteLine("Es wird " + zeichen + " durch " + ersatz + "ersetzt:");
                         string ersetzt= string.Empty;
+                        ersetzt = zuErsetzen.Replace(zeichen, ersatz);
                         // string ersetzt = ""; auch
                         for (int i = 0; i < zuErsetzen.Length; i++)
                         {
