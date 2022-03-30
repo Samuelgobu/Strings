@@ -82,9 +82,10 @@ namespace Strings
                     case 2:
                         Console.WriteLine("Vokale sollen entfernt werden.");
                         string zeichenkette;
-                        string zeichenketteALT = zeichenkette;
+                        
                         Console.WriteLine("Zeichenkette eingeben:");
-                        zeichenketteALT = Console.ReadLine();
+                        zeichenkette = Console.ReadLine();
+                        string zeichenketteALT = zeichenkette;
 
                         string ergebnis = "";
 
@@ -97,11 +98,21 @@ namespace Strings
 
                         string vokale = "aeiouAEIOU";
 
-
+                        string ersetzt2 = "";
                         for (int i = 0; i < vokale.Length; i++)
                         {
                             zeichenkette = zeichenkette.Replace(vokale[i].ToString(), "");
-                            //for (int j = 0; j < )
+                            //for (int j = 0; j < zeichenkette.Length; j++)
+                            //{
+                            //    if(zeichenkette[j] == vokale[i])
+                            //    {
+                            //        ersetzt2 += "";
+                            //    }
+                            //    else
+                            //    {
+                            //        ersetzt2 += zeichenkette[i];
+                            //    }
+                            //}
 
 
                         } Console.WriteLine(zeichenketteALT + " wird zu " + zeichenkette);
