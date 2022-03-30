@@ -39,7 +39,8 @@ namespace Strings
                 int auswahl;
                 Console.WriteLine("1: Zeichen ersetzen.");
                 Console.WriteLine("2: Vokale entfernen.");
-                Console.WriteLine("3: Beenden.");
+                Console.WriteLine("3: Queersumme bilden.");
+                Console.WriteLine("4: Beenden.");
 
 
                 Console.Write("Auswahl:");
@@ -58,13 +59,13 @@ namespace Strings
                         ersatz = Console.ReadLine();
                         Console.WriteLine("Es wird " + zeichen + " durch " + ersatz + "ersetzt:");
                         string ersetzt= string.Empty;
-                        ersetzt = zuErsetzen.Replace(zeichen, ersatz);
+                        //ersetzt = zuErsetzen.Replace(zeichen, ersatz);
                         // string ersetzt = ""; auch
                         for (int i = 0; i < zuErsetzen.Length; i++)
                         {
                             if (zuErsetzen[i].ToString() == zeichen)
                             {
-                                ersetzt += ersatz;
+                                ersetzt = ersetzt + ersatz;
                             }
                             else
                             {
@@ -80,8 +81,60 @@ namespace Strings
                         break;
                     case 2:
                         Console.WriteLine("Vokale sollen entfernt werden.");
-                        break;
+                        string zeichenkette;
+                        string zeichenketteALT = zeichenkette;
+                        Console.WriteLine("Zeichenkette eingeben:");
+                        zeichenketteALT = Console.ReadLine();
+
+                        string ergebnis = "";
+
+                        //ergebnis = zeichenkette.Replace("a", "");
+                        //string ergebnis1 = ergebnis.Replace("e", "");
+                        //string ergebnis2 = ergebnis1.Replace("i", "");
+                        //string ergebnis3 = ergebnis2.Replace("o", "");
+                        //string ergebnis4 = ergebnis3.Replace("u", "");
+                        //Console.WriteLine(zeichenkette + " wird zu " + ergebnis4);
+
+                        string vokale = "aeiouAEIOU";
+
+
+                        for (int i = 0; i < vokale.Length; i++)
+                        {
+                            zeichenkette = zeichenkette.Replace(vokale[i].ToString(), "");
+                            //for (int j = 0; j < )
+
+
+                        } Console.WriteLine(zeichenketteALT + " wird zu " + zeichenkette);
+
+
+
+
+
+
+
+
+
+
+                            break;
+
+
                     case 3:
+                        Console.WriteLine("Die Quersumme einer ganzen Zahl soll berechnet werden");
+
+
+
+
+                        break;
+
+
+
+
+
+
+
+
+
+                    case 4:
                         Console.WriteLine("Programm wird beendet.");
                         
                         break;
