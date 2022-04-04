@@ -40,7 +40,8 @@ namespace Strings
                 Console.WriteLine("1: Zeichen ersetzen.");
                 Console.WriteLine("2: Vokale entfernen.");
                 Console.WriteLine("3: Queersumme bilden.");
-                Console.WriteLine("4: Beenden.");
+                Console.WriteLine("4: auf Kleinbuchstaben prüfen.");
+                Console.WriteLine("5: Beenden.");
 
 
                 Console.Write("Auswahl:");
@@ -160,16 +161,52 @@ namespace Strings
 
 
                         break;
-
-
-
-
-
-
-
-
-
                     case 4:
+                        Console.WriteLine("Ein String wird auf Kleinbuchstaben untersucht.");
+                        Console.WriteLine("Eine Ziehchenkette eingeben: ");
+                        string wort = Console.ReadLine();
+                        int zz = 0;
+                        for (int i = 0; i < wort.Length; i++)
+                        {
+                            if (wort[i] >= 97 && wort[i] <= 122)
+                            {
+                                Console.WriteLine("Kleinbuchstabe vorhanden. " );
+                            }
+                            else
+                            {
+                                Console.WriteLine("Kein Kleinbuchstabe vorhanden.");
+                            }
+                            //    if (char.IsLower(wort[i]))
+                            //    {
+                            //        zz ++;
+                            //    }
+                            //}
+                            //if (zz>0)
+                            //{
+                            //    Console.WriteLine("Klinbuchstabe vorhanden. ");
+                            //}
+                            //else
+                            //{
+                            //    Console.WriteLine("Kein Kleinbuchstabe vorhanden.");
+                        }
+
+
+
+
+
+
+
+
+                        break;
+
+
+
+
+
+
+
+
+                    case 5:
                         Console.WriteLine("Programm wird beendet.");
                         
                         break;
