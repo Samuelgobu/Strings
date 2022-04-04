@@ -11,27 +11,27 @@ namespace Strings
         static void Main(string[] args)
         {
             Console.WriteLine("Arbeiten mit Strings");
-            string s = "Hallo";
+            //string s = "Hallo";
             //s.Length
             //s [1]=
             // for (int i = 0; i < s.Length ; i++)
             // {Console.Write(s[i]);}
-            Console.WriteLine(s);
+            //Console.WriteLine(s);
             // i = i+5;
             //i += 5;
             // i ++ <-> i = i+1;
 
-            for (int i =0; i< s.Length; i++)
-            {
-                Console.WriteLine(s[i]);
+            //for (int i =0; i< s.Length; i++)
+            //{
+            //    Console.WriteLine(s[i]);
                     
-             }
+            // }
             //umgekehrte Reihnfolge =
-            for (int i = s.Length -1; i>=0; i--)
-            {
-                Console.WriteLine(s[i]);
+            //for (int i = s.Length -1; i>=0; i--)
+            //{
+            //    Console.WriteLine(s[i]);
 
-            }
+            //}
             string wiederholen;
             do
             {
@@ -87,7 +87,7 @@ namespace Strings
                         zeichenkette = Console.ReadLine();
                         string zeichenketteALT = zeichenkette;
 
-                        string ergebnis = "";
+                        //string ergebnis = "";
 
                         //ergebnis = zeichenkette.Replace("a", "");
                         //string ergebnis1 = ergebnis.Replace("e", "");
@@ -98,7 +98,7 @@ namespace Strings
 
                         string vokale = "aeiouAEIOU";
 
-                        string ersetzt2 = "";
+                        //string ersetzt2 = "";
                         for (int i = 0; i < vokale.Length; i++)
                         {
                             zeichenkette = zeichenkette.Replace(vokale[i].ToString(), "");
@@ -131,15 +131,32 @@ namespace Strings
 
                     case 3:
                         Console.WriteLine("Die Quersumme einer ganzen Zahl soll berechnet werden");
-                        int Quersumme;
-                        string Zahl;
-                        Console.WriteLine("Zahl eingeben");
-                        Zahl = (Console.ReadLine());
-                        for (int i = 0; i < Zahl.Length; i++)
+                        Console.Write("Eine ganze zehl eingeben:");
+                        string zahl = Console.ReadLine();
+                        int quersumme = 0;
+                        for (int i = 0; i < zahl.Length; i++)
                         {
-                            Quersumme = Convert.ToInt32(Zahl[i] + Zahl[i + 1]);
+                            quersumme += Convert.ToInt32(zahl[i].ToString());
+                            //quersumme = quersumme + Convert.ToInt32(zahl[i].ToString());
                         }
-                        Console.WriteLine(Quersumme);
+                        Console.WriteLine("Die Quersumme von " + zahl + " ist: " + quersumme);
+
+
+                        //int Quersumme;
+                        //string Zahl;
+                        
+                        //Console.WriteLine("Zahl eingeben");
+                        //Zahl = (Console.ReadLine());
+                        //for (int i = 0; i < Zahl.Length; i++)
+                        //{
+                        //    string Zahlj;
+                        //    for (int j = 0; j < Zahlj.Length; j++)
+                        //        Zahlj = Convert.ToInt32(Zahl[i] + Zahl[i + 1]);
+                        //        Quersumme = Convert.ToInt32(Zahl[j] + Zahl[i + 1]);
+                        //}
+                        //Console.WriteLine();
+
+
 
 
                         break;
