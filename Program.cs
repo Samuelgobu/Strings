@@ -131,14 +131,15 @@ namespace Strings
 
                     case 3:
                         Console.WriteLine("Die Quersumme einer ganzen Zahl soll berechnet werden");
-
-                        int Zahl;
+                        int Quersumme;
+                        string Zahl;
                         Console.WriteLine("Zahl eingeben");
-                        Zahl = Convert.ToInt32(Console.ReadLine());
-                        for (int i = 0, i < Zahl.Length, i++)
+                        Zahl = (Console.ReadLine());
+                        for (int i = 0; i < Zahl.Length; i++)
                         {
-
+                            Quersumme = Convert.ToInt32(Zahl[i] + Zahl[i + 1]);
                         }
+                        Console.WriteLine(Quersumme);
 
 
                         break;
